@@ -1,0 +1,46 @@
+.hidden {
+  display: none;
+}
+
+.address-list .item-added:enabled:focus {
+  border-color: var(--color-magenta) !important;
+  background-color: var(--color-magenta) !important;
+}
+
+.address-list li {
+  margin-bottom: 10px;
+}
+
+.address-list a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  min-height: var(--line-height);
+  padding: 0 20px;
+  min-width: 210px;
+  cursor: pointer;
+  background-color: var(--color-blue);
+  border: none;
+  color: #ffffff;
+}
+
+.address-list a:hover {
+  background-color: var(--color-magenta);
+  color: #ffffff;
+}
+
+.address-list a:after {
+  content: attr(data-delete-id);
+  color: #ffffff;
+  font-size: 13px;
+  position: relative;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 0;
+}
+
+.address-list span {
+  margin-left: 15px;
+}
